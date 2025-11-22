@@ -5,4 +5,4 @@ const colores = ["red", "blue", "yellow", "lightgreen", "lightblue", "pink", "cy
 boton.addEventListener("click", () =>  {
     const colorAleatorio = colores[Math.floor(Math.random()*colores.length)];
     cuerpo.style.backgroundColor = colorAleatorio;
-})
+});
