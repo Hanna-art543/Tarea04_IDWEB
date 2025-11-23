@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario con Fetch API</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        padding: 20px; 
+    }
+    label { 
+        display: block; 
+        margin-top: 10px; 
+    }
+    input { 
+        padding: 8px; 
+        width: 250px; 
+    }
+    button { 
+        margin-top: 15px; 
+        padding: 8px 15px; 
+        cursor: pointer; 
+    }
+    #mensaje { 
+        margin-top: 20px;
+        font-weight: bold; 
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enviar datos a una API</h2>
+
+  <form id="formulario">
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+    </label>
+
+    <label>Email:
+      <input type="email" id="email" required>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensaje"></div>
+
+  <script src="../js/ejercicio10.js"></script>
+</body>
+</html>
