@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar un nuevo post</title>
+
+    <style>
+        body { 
+            font-family: system-ui, sans-serif; 
+            padding: 2rem; 
+            max-width: 700px; 
+            margin: auto; 
+        }
+        label { 
+            display:block; 
+            margin-top: 0.75rem; 
+        }
+        input, textarea { 
+            width:100%; 
+            padding:0.5rem; 
+            margin-top:0.25rem; 
+            box-sizing:border-box; 
+        }
+        button { 
+            margin-top:1rem; 
+            padding:0.5rem 1rem; 
+            cursor:pointer; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Enviar nuevo post (fetch POST)</h1>
+    <form id="postForm">
+    <label>
+      Title
+      <input type="text" id="title" name="title" required placeholder="Título del post" />
+    </label>
+
+    <label>
+      Body
+      <textarea id="body" name="body" rows="6" required placeholder="Contenido del post"></textarea>
+    </label>
+
+    <label>
+      userId
+      <input type="number" id="userId" name="userId" required min="1" value="1" />
+    </label>
+
+    <button type="submit">Enviar post</button>
+  </form>
+</body>
+</html>

@@ -1,6 +1,6 @@
 const lista = document.getElementById("listaUsuarios");
 
-// Obetenemos los datos
+// Obtenemos los datos
 fetch("https://jsonplaceholder.typicode.com/users")
     .then(respuesta => respuesta.json())
     .then(usuarios => {
